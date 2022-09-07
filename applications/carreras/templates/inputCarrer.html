@@ -1,0 +1,16 @@
+<h1>CARRERA POR PARAMETRO INGRESADO POR UN INPUT</h1>
+
+<form method="GET">
+    <input type="text" id="namecar" name="namecar" placeholder="Ingrese el nombre de la carrera">
+    <button type="submit">Buscar</button>
+</form>
+
+<h3>Resultado: </h3>
+
+<ul>
+    {% for carrer in cars %}
+        <li>
+            {{carrer.nameCarrer}}
+        </li>
+    {% endfor %}
+</ul>
